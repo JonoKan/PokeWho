@@ -1,0 +1,34 @@
+@font-face {
+  font-family: PokemonHollow;
+  src: url(./Pokemon.woff);
+}
+
+:root {
+  --grey: #5E6973;
+  --red: #EF4036;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rock Salt", cursive;
+}
+
+.main-body {
+  background: linear-gradient(to bottom, var(--red) 0%, var(--red) 50%, var(--white) 50%, var(--white) 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: PokemonHollow;
+  color: white;
+  font-size: 90px;
+  font-weight: 400;
+  position: absolute;
+  top: -7.5%;
+}
