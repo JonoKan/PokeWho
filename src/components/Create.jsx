@@ -1,21 +1,19 @@
 import styles from './Create.module.css'
 import React, {useState} from 'react'
 
-const Create = () => {
+const Create = ({code}) => {
 
     const regions = ['alola', 'galar', 'hoenn', 'johto', 'kanto', 'unova', 'sinnoh', 'kalos', 'all regions']
     const [selectedRegion, setSelectedRegion] = useState("alola")
+    const link = `https://pokewho.com/78ad`
 
-    const copyText = () => {
-
-    }
     return (
         <div className='main-body'>
             <h2 className="title">PokéWho</h2>
             <div className={styles.section}>
                 <div className={styles.link}>
-                    <p>https://pokewho.com/pxla</p>
-                    <button id='copy-button' className={styles.copybutton} onClick={copyText}>copy</button>
+                    <p>{link}</p>
+                    <button id='copy-button' className={styles.copybutton} onClick={() => {navigator.clipboard.writeText(link)}}>copy</button>
                 </div>
                 <div className={styles.regions}>
                     <h2>Select Region</h2>
