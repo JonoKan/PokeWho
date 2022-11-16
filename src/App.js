@@ -1,14 +1,16 @@
 import './App.css'
 import Home from './components/Home'
 import Create from './components/Create'
-import Start from './components/GameStart'
+import GameStart from './components/GameStart'
+import GamePage from './components/GamePage'
 
 const App = () => {
     return (
         <div>
             {/* <Home /> */}
             {/* <Create /> */}
-            <Start />
+            {/* <GameStart /> */}
+            <GamePage />
         </div>
     )
 }

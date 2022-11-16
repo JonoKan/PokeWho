@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    'header header'
+    'aside game ';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+.header {
+    grid-area: header;
+    background: var(--red);
+    display: grid;
+    place-items: center;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.game {
+    grid-area: game;
+}
