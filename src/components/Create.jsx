@@ -1,5 +1,6 @@
 import styles from './Create.module.css'
 import React, {useState} from 'react'
+import Title from './Title'
 
 const Create = ({code}) => {
 
@@ -9,7 +10,7 @@ const Create = ({code}) => {
 
     return (
         <div className='main-body'>
-            <h2 className="title">PokéWho</h2>
+            <Title/>
             <div className={styles.section}>
                 <div className={styles.link}>
                     <p>{link}</p>

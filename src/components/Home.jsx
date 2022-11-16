@@ -1,9 +1,10 @@
 import styles from './Home.module.css'
+import Title from './Title'
 
 const Home = () => {
     return (
         <div className='main-body' >
-            <h2 className="title">PokéWho</h2>
+            <Title/>
             <input id={styles.code} placeholder='enter 4 digit code'></input>
             <div className={styles.buttons}>
                 <button className={styles.button}>new game</button>
