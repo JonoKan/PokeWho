@@ -3,8 +3,12 @@ import Title from './Title'
 import Info from './Info'
 import { useState, useEffect } from 'react'
 
-const GamePage = () => {
+const GamePage = ({limit, offset}) => {
 
+    const randNum = (limit, offset) => {
+        return Math.floor(Math.random() * (limit - offset + 1)) + offset
+    }
+    
     const [pokemon, setPokemon] = useState(null)
     const [info, setInfo] = useState({
         pokedexNum: '001',
@@ -12,9 +16,6 @@ const GamePage = () => {
         type: 'grass',
         generation: '4'
     })
-    useEffect(() => {
-
-    },[pokemon, info])
     return (
         <div className={styles.container}>
             <div className={styles.header}>
