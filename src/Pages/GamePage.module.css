@@ -21,5 +21,17 @@
 }
 
 .game {
+    width: 700px;
+    height: 700px;
     grid-area: game;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+}
+
+.game div {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
 }
