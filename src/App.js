@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Create from './Pages/Create'
 import GameStart from './Pages/GameStart'
 import GamePage from './Pages/GamePage'
+import firebaseConfig from './firebase'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
