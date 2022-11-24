@@ -1,75 +1,126 @@
-.buttons {
-    position: absolute;
-    top: 430px;
+.container {
     display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 200px;
 }
 
-.button {
-    height: 70px;
-    width: 250px;
-    border-radius: 15px;
-    background: #5E6973;
-    color: white;
-    font-size: 28px;
+.lightRed {
+    height: 100vh;
+    width: 75%;
+    background-color: var(--lightRed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skewLightRed {
+    height: 100vh;
+    width: 35%;
+    transform: skew(-25deg);
+    background-color: var(--lightRed);
+    margin-left: -15%;
+    z-index: -1;
+}
+
+.interact {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interact > * {
+    height: 75px;
+    width: 45%;
+    font-size: 30px;
+    border-style: none;
+    color: var(--white);
+}
+
+.lightBlue {
+    position: absolute;
+    height: 75px;
+    width: 60px;
+    background: var(--lightBlue);
+    margin-top: -75px;
+    z-index: 999;
+}
+
+.skewLightBlue {
+    position: absolute;
+    height: 75px;
+    width: 40px;
+    background: var(--lightBlue);
+    transform: skew(-25deg);
+    margin-top: -75px;
+    margin-left: 40px;
+}
+
+.newGame {
+    background-color: var(--darkerBlue);
     cursor: pointer;
 }
 
-button {
-    border-style: none;
-}
-
-#code {
-    position: absolute;
-    top: 375px;
-    right: 390px;
-    color: var(--white);
+.newGame h1 {
+    font-size: 24px;
     text-align: center;
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid var(--white);
-    background: transparent;
+    height: 80%;
+    margin: 7.5px 0;
 }
 
-#code::placeholder {
+
+.joinCode {
+    margin-top: 75px;
+    background-color: transparent;
+    border-bottom: 4px solid var(--white);
+}
+
+.joinCode::placeholder {
+    text-align: center;
     color: var(--white);
 }
 
-#code:focus {
-    caret-color: transparent;
-}
-
-#code:focus::placeholder {
-    color: transparent;
-}
-#code:focus-visible{
-    outline: none
-}
-
-.info {
-    position: absolute;
-    bottom: 100px;
-    text-align: center;
-}
-
-.info p{
-    margin-bottom: 25px;
-    font-size: 25px;
-}
-
-.instructions {
-    height: 180px;
-    width: 500px;
-    padding: 15px;
+.joinGame {
+    margin-top: 25px;
     background-color: var(--grey);
+    border-style: none;
     color: var(--white);
-    border-radius: 15px;
+    cursor: pointer;
 }
 
-.instructions ul{
-    list-style: none;
+
+.darkRed {
+    height: 100vh;
+    width: 10%;
+    transform: skew(-25deg);
+    background-color: var(--darkerRed);
+    margin-left: -10px;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-areas:
+    'none bird'
+    'pikachu pokeball';
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.pokeball {
+    grid-area: pokeball;
+    height: 100%;
+}
+
+.pikachu {
+    grid-area: pikachu;
+    height: 120%;
+    align-self: baseline;
+}
+
+.bird {
+    grid-area: bird;
+    height: 120%;
+    align-self: center;
 }
 

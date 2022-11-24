@@ -1,7 +1,9 @@
 .title {
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 400;
     font-family: PokemonHollow;
     margin-top: -30px;
+    width: 330px;
+    text-align: center;
 }

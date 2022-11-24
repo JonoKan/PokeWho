@@ -6,9 +6,9 @@
 :root {
   --grey: #71787D;
   --lightRed: #EF4036;
-  --darkRed: #D01F15;
+  --darkerRed: #D01F15;
   --lightBlue: #265D8F;
-  --darkBlue: #2E4E6D;
+  --darkerBlue: #2E4E6D;
   --white: #fff;
 }
 
@@ -17,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rock Salt", cursive;
+  overflow: hidden;
 }
 
 
