@@ -3,6 +3,7 @@ const firebaseConfig = {
   authDomain: "pokewho-92ec5.firebaseapp.com",
   projectId: "pokewho-92ec5",
   storageBucket: "pokewho-92ec5.appspot.com",
+  databaseURL: "https://pokewho.firebaseio.com",
   messagingSenderId: "802107260211",
   appId: "1:802107260211:web:932731f954cc04073bd246",
   measurementId: "G-FNJX9T5V7P"
