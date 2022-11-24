@@ -4,8 +4,11 @@
 }
 
 :root {
-  --grey: #5E6973;
-  --red: #EF4036;
+  --grey: #71787D;
+  --lightRed: #EF4036;
+  --darkRed: #D01F15;
+  --lightBlue: #265D8F;
+  --darkBlue: #2E4E6D;
   --white: #fff;
 }
 
