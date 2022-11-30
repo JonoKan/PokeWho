@@ -1,6 +1,6 @@
 import styles from "./Create.module.css";
 import React, { useState } from "react";
-import charizard from '../assets/charizard.svg'
+import charizard from "../assets/charizard.svg";
 
 const Create = ({ code }) => {
   const regions = [
@@ -72,11 +72,11 @@ const Create = ({ code }) => {
           <div className={styles.regions}>
             {regions.map((region) => (
               <button
-              key={region.name}
-              onClick={() => setSelectedRegion(region.name)}
-              className={
-                region.name === selectedRegion ? `${styles.active}` : ""
-              }
+                key={region.name}
+                onClick={() => setSelectedRegion(region.name)}
+                className={
+                  region.name === selectedRegion ? `${styles.active}` : ""
+                }
               >
                 {region.name}
               </button>
@@ -87,7 +87,7 @@ const Create = ({ code }) => {
             <p>start game</p>
           </div>
         </div>
-      <img src={charizard} className={styles.charizard}></img>
+        <img src={charizard} className={styles.charizard}></img>
       </div>
     </div>
   );
