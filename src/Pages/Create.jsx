@@ -1,6 +1,6 @@
 import styles from "./Create.module.css";
 import React, { useState } from "react";
-import Title from "../components/Title";
+import charizard from '../assets/charizard.svg'
 
 const Create = ({ code }) => {
   const regions = [
@@ -50,43 +50,44 @@ const Create = ({ code }) => {
       offset: 0,
     },
   ];
-  const [selectedRegion, setSelectedRegion] = useState("alola");
+  const [selectedRegion, setSelectedRegion] = useState("kanto");
   const link = `https://pokewho.com/78ad`;
 
   return (
-    <div className="main-body">
-      <Title />
-      <div className={styles.section}>
-        <div className={styles.link}>
-          <p>{link}</p>
-          <button
-            id="copy-button"
-            className={styles.copybutton}
-            onClick={() => {
-              navigator.clipboard.writeText(link);
-            }}
-          >
-            copy
-          </button>
-        </div>
-        <div className={styles.regions}>
-          <h2>Select Region</h2>
-          {regions.map((region) => (
+    <div className={styles.mainBackground}>
+      <div className={styles.container}>
+        <h2>Select Region</h2>
+        <div className={styles.section}>
+          <div className={styles.link}>
+            <p>{link}</p>
             <button
+              className={styles.copybutton}
+              onClick={() => {
+                navigator.clipboard.writeText(link);
+              }}
+            >
+              copy
+            </button>
+          </div>
+          <div className={styles.regions}>
+            {regions.map((region) => (
+              <button
               key={region.name}
               onClick={() => setSelectedRegion(region.name)}
               className={
                 region.name === selectedRegion ? `${styles.active}` : ""
               }
-            >
-              {region.name}
-            </button>
-          ))}
+              >
+                {region.name}
+              </button>
+            ))}
+          </div>
+          {/* Will pass limit and offset as props to GamePage route */}
+          <div className={styles.start}>
+            <p>start game</p>
+          </div>
         </div>
-        {/* Will pass limit and offset as props to GamePage route */}
-        <div className={styles.start}>
-          <p>start game</p>
-        </div>
+      <img src={charizard} className={styles.charizard}></img>
       </div>
     </div>
   );

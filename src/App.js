@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <div>
-      <Home />
-      {/* <Create /> */}
+      {/* <Home /> */}
+      <Create />
       {/* <GameStart /> */}
       {/* <GamePage /> */}
     </div>
